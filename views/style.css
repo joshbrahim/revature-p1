@@ -1,0 +1,19 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+
+
+
+.row2{
+    text-align:center;
+    align-content: center;
+}
+
+.title1{
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12em;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+}

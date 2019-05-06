@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background-color: linen;
+         }
+
+        h1 {
+            color:crimson;
+            margin-left: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 4em;
+        } 
+        img {
+            width: 100%;
+            height: auto;
+            align-content: center;
+        }
+        h2 {
+            font-size: 2em
+        }
+    </style>
+    <title>jimge</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>jimge</h1>
+            <nav>
+                <%= typeof msg != 'undefined' ? msg : '' %>
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <div>
+                      <div>
+                        <span><h2>File Search</h2></span>
+                        <input name="File" type="file">
+                      </div>
+                      <div>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <button type="submit"><h2>Upload</h2></button></li>
+                </form>
+            </nav>
+        </header>
+        <br>
+        <main>
+            <nav>
+                <img src="<%= typeof file != 'undefined' ? file : '' %>">
+            </nav>
+            
+
+        </main>
+            
+        <footer>
+
+            <nav>
+
+            </nav>
+
+        </footer>
+    </div>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="../server.js" type="module"></script>
+</body>
+
+</html>
